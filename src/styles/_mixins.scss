@@ -1,0 +1,7 @@
+@import "./functions";
+
+@mixin face-up {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+
