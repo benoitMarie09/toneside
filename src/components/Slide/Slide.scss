@@ -8,13 +8,15 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  overflow: hidden;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  animation: slide-down 1000ms both cubic-bezier(0.55, 0.085, 0, 0.99);
-  //transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
+  transform: translateY(0);
+  transition: 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
 
   &--up {
-    animation: slide-up 1000ms both cubic-bezier(0.55, 0.085, 0, 0.99);
+    transform: translateY(-100%);
+    transition: 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
   }
 }

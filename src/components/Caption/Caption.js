@@ -5,9 +5,11 @@ const Caption = ({ caption, currentSlide, index }) => {
   console.log(caption);
 
   return (
-    <div className={currentSlide === index ? "caption animated" : "caption"}>
+    <div
+      className={`caption ${currentSlide === index ? "caption--animated" : ""}`}
+    >
       {caption.title && (
-        <img className="title" src={caption.title} alt="title" />
+        <img className="caption__title" src={caption.title} alt="title" />
       )}
       {caption.link && (
         <Link to={caption.link}>

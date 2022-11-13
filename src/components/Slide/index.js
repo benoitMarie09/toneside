@@ -3,8 +3,8 @@ import Caption from "../Caption/Caption";
 
 function Slide({ currentSlide, updateSlide, index, slideNb, image, caption }) {
   const z = slideNb - index;
-  console.log(index);
   function wheelSlide(event) {
+    console.log(currentSlide);
     if (event.deltaY > 0) {
       if (currentSlide < slideNb - 1) {
         updateSlide(index + 1);
